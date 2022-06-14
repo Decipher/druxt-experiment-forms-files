@@ -1,0 +1,61 @@
+uuid: 8ec48beb-e7b6-4147-9043-530865887290
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.microcontent.form_image_upload.field_image
+    - field.field.microcontent.form_image_upload.field_title
+    - microcontent.type.form_image_upload
+  module:
+    - image
+    - user
+id: microcontent.form_image_upload.default
+targetEntityType: microcontent
+bundle: form_image_upload
+mode: default
+content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  revision_log: true
+  status: true

@@ -9,6 +9,7 @@ dependencies:
     - contact
     - druxt
     - filter
+    - microcontent
     - search
     - system
 _core:
@@ -22,5 +23,6 @@ permissions:
   - 'access content'
   - 'access druxt resources'
   - 'access site-wide contact form'
+  - 'create form_image_upload microcontent'
   - 'search content'
   - 'use text format restricted_html'

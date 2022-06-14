@@ -1,0 +1,19 @@
+uuid: 4db3ba97-3c73-4c32-8892-b5c789732696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.microcontent.field_title
+    - microcontent.type.form_image_upload
+id: microcontent.form_image_upload.field_title
+field_name: field_title
+entity_type: microcontent
+bundle: form_image_upload
+label: Title
+description: 'The Image title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

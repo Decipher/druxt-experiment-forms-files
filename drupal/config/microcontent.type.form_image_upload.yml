@@ -1,0 +1,8 @@
+uuid: fe84d392-bea2-453c-94d3-3a5ac3b079f1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Form: Image upload'
+id: form_image_upload
+description: 'An example Decoupled form with an image upload field.'
+type_class: ''
