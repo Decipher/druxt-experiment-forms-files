@@ -30,21 +30,18 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: ['druxt-entity'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    'druxt-site',
-  ],
+  modules: [],
 
   // DruxtJS: https://druxtjs.org
   druxt: {
     baseUrl,
+    // Enable the JSON:API proxy.
+    proxy: { api: true },
     // Disable deprecated Entity fields.
     entity: { components: { fields: false }},
-    // Set the default theme to render Site regions.
-    site: { theme: 'bartik' },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
