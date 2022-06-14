@@ -1,0 +1,10 @@
+uuid: f849be05-42c6-4761-82dd-069fed196912
+langcode: en
+status: true
+dependencies:
+  module:
+    - microcontent
+id: microcontent.frontend
+label: Frontend
+targetEntityType: microcontent
+cache: true

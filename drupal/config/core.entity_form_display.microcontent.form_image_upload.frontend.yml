@@ -1,0 +1,37 @@
+uuid: 6e42a1da-ef8b-48eb-a894-ad95416d4da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.microcontent.frontend
+    - field.field.microcontent.form_image_upload.field_image
+    - image.style.thumbnail
+    - microcontent.type.form_image_upload
+  module:
+    - image
+id: microcontent.form_image_upload.frontend
+targetEntityType: microcontent
+bundle: form_image_upload
+mode: frontend
+content:
+  field_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  revision_log: true
+  status: true
+  uid: true

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.microcontent.form_image_upload.field_image
-    - field.field.microcontent.form_image_upload.field_title
     - image.style.thumbnail
     - microcontent.type.form_image_upload
   module:
@@ -27,14 +26,6 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_title:
-    type: string_textfield
-    weight: 121
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   label:
     type: string_textfield

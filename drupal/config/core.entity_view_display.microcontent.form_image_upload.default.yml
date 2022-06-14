@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.microcontent.form_image_upload.field_image
-    - field.field.microcontent.form_image_upload.field_title
     - microcontent.type.form_image_upload
   module:
     - image
@@ -32,14 +31,6 @@ content:
       image_style: ''
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_title:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
     region: content
   label:
     type: string
